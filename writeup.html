@@ -1,0 +1,143 @@
+<head>
+    <title> COS426 Assignment 5 Cloth Simulation &mdash; Writeup</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<script src="js/student.js"> </script>
+<script src="coursejs/writeup.js"> </script>
+<div class="top">
+<div class="main_div">
+
+<h1> <div class=assignment>COS426 Assignment 5</div> Cloth Simulation &mdash; Writeup</h1>
+<h2>Switch to: <a href='index.html'>Simulation</a></h2>
+<div class='selectable'>
+<h2 id='student'></h2>
+<br>
+
+<div id='collaboration'>
+    <div>
+    Collaboration Statement:
+    </div>
+        <br>
+    <div>
+        <em>
+            Under penalty of academic dishonesty (as outlined in RRR)
+            my digital signature below verifies that the following is true:
+            <ul>
+                <p>
+                    that all images in this writeup were generated directly by my solution code
+                    or provided by the course staff (exception: art contest submissions
+                    may pass through intermediary software like GIMP)
+                </p>
+                <p>
+                    that no other student has viewed my writeup explanations
+                    or my writeup images
+                </p>
+                <p>
+                    that my solution code is my own work; particularly that
+                    my solution was not copied from any other
+                    student's solution code, and that no other student
+                    copied their solution directly code from me
+                </p>
+                <p>
+                    that I did not discuss assignment specifics or view
+                    the solution code of any other student besides that of my (optional) partner
+                </p>
+                <p>
+                    that I have followed all other course collaboration
+                    and course plagiarism policies as written on the course website.
+                </p>
+            </ul>
+        </em>
+        <p>
+            <strong>
+                YOUR NAME HERE  (your-netid-here)
+            </strong>
+        </p>
+
+        <p>
+            Collaborated with: PARTNER NAME HERE (partner-netid-here)
+        </p>
+        <br>
+    </div>
+</div>
+<p><hr><p><h2>Table of Contents</h2><p><hr><p>
+
+<ul>
+<li>(0.5) <a href='#Event+Handler'>Event listeners</a></li>
+<li>(1.0) <a href='#Cloth'>Cloth</a></li>
+<li>(1.5) <a href='#Constraints'>Constraints</a></li>
+<li>(1.0) <a href='#Gravity'>Gravity</a></li>
+<li>(1.5) <a href='#Verlet+integration'>Verlet integration</a></li>
+<li>(0.5) <a href='#Floor+collision'>Floor collision</a></li>
+<li>(1.5) <a href='#Sphere+collision'>Sphere collision</a></li>
+<li>(1.5) <a href='#Box+collision'>Box collision</a></li>
+<li>(1.0+) <a href='#Extensions'>Extensions</a></li>
+<li>(1.0+) <a href='#Art+contest'>Art Contest</a></li>
+</ul></div>
+
+<p><hr><p><a name='Event+Listeners'></a><h2>Event Listeners</h2><p><hr><p>
+Briefly describe your implementation of adding event listeners to the scene.
+In particular, list all of the keys that you have bound to an action, and briefly describe the action, as below:
+<ul>
+  <li> "ArrowUp": Move the looked-at particle upwards.
+</ul>
+
+
+<p><hr><p><a name='Cloth'></a><h2>Cloth</h2><p><hr><p>
+Briefly describe your implementation of building the cloth out of particles and springs.
+
+<p><hr><p><a name='Constraints'></a><h2>Constraints</h2><p><hr><p>
+Briefly describe how you enforced the constraints between particles within the cloth.
+
+<p><hr><p><a name='Gravity'></a><h2>Gravity</h2><p><hr><p>
+Briefly describe how you accounted for the force of gravity acting on the cloth.
+
+<p><hr><p><a name='Verlet+integration'></a><h2>Verlet integration</h2><p><hr><p>
+Briefly describe how you implemented Verlet integration in order to compute new particle positions.
+<p><b>Deliverable <a href="/index.html?wireframe=false">(click me)</a></b>: Please include an image of your cloth (not wireframe) with "Corners" pinned and no objects in the scene in its
+final resting state, to demonstrate that your cloth updates its particle positions properly over time.
+
+<!-- Sample code for video embedding -->
+<!-- http://localhost:8000/index.html?gravity=false&wave=true&waveFreq=3&wireframe=false&clothColor=11170857&showClothTexture=true -->
+<video autoplay controls loop>
+  <source src="results/samplevideo.webm" type="video/webm">
+</video>
+
+<br><br><img src='results/placeholder.png'>
+
+<p><hr><p><a name='Floor+collision'></a><h2>Floor collision</h2><p><hr><p>
+Briefly describe how you handled floor collisions.
+<p><b>Deliverable <a href="/index.html?pinned=OneEdge&wireframe=false">(click me)</a></b>: Please include an image of your cloth (not wireframe) with "OneEdge" pinned and no objects in the scene in its
+final resting state, to demonstrate that your cloth does not clip through the floor.
+
+<br><br><img src='results/placeholder.png'>
+
+<p><hr><p><a name='Sphere+collision'></a><h2>Sphere collision</h2><p><hr><p>
+Briefly describe how you handled sphere collisions.
+<p><b>Deliverable <a href="/index.html?fabricLength=700&pinned=OneEdge&object=Sphere&wireframe=false">(click me)</a></b>: Please include an image of your cloth (not wireframe) with "OneEdge" pinned and the sphere object in the scene
+in a resting state. Increase the size of the cloth to 700 so that it remains draped over the sphere.
+
+<br><br><img src='results/placeholder.png'>
+
+<p><hr><p><a name='Box+collision'></a><h2>Box collision</h2><p><hr><p>
+Briefly describe how you handled box collisions.
+<p><b>Deliverable <a href="/index.html?fabricLength=700&pinned=TwoEdges&object=Box&wireframe=false">(click me)</a></b>: Please include an image of your cloth (not wireframe) with "TwoEdges" pinned and the box object in the scene
+in a resting state. Increase the size of the cloth to 700 so that it remains draped over the box.
+
+<br><br><img src='results/placeholder.png'>
+
+<p><hr><p><a name='Extensions'></a><h2>Extensions</h2><p><hr><p>
+Briefly describe any extensions that you chose to complete. Please include images and/or videos as
+necessary so that we can see what you've done!
+
+
+<p><hr><p><a name='Art+contest'></a><h2>Art contest</h2><p><hr><p>
+Briefly describe your submission to the art contest. Please include images and/or videos as
+necessary so that we can see what you've done!
+
+</div>
+</div>
+</body>
+</html>
